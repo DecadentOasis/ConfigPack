@@ -27,16 +27,13 @@ fi
 echo Setting pusher to reflash mode.
 
 echo Please enter your user password so I can get access to the PixelPusher.
-# sudo echo Purple > /dev/cu.usbmodem12341
-#sleep 1
-#sudo dfu-programmer atmega32u4 erase
-#sudo dfu-programmer atmega32u4 flash PixelPusher-super-1-3.hex
-#sudo dfu-programmer atmega32u4 start
-#sleep 1
-#sudo echo Orange > /dev/cu.usbmodem12341
-
-echo Here we go:  watch for progress dots!
-sudo ./lpc21isp-pp -bin -control ./PixelPusher-MP-1-41.bin /dev/cu.usbmodem12341 115200 96000
+sudo echo Purple > /dev/cu.usbmodem12341
+sleep 1
+sudo dfu-programmer atmega32u4 erase
+sudo dfu-programmer atmega32u4 flash PixelPusher-super-1-3.hex
+sudo dfu-programmer atmega32u4 start
+sleep 1
+sudo echo Orange > /dev/cu.usbmodem12341
 
 echo Now power cycle your PixelPusher.
 
