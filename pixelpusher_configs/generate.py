@@ -48,6 +48,7 @@ strip5=apa102
 strip6=apa102
 strip7=apa102
 strip8=apa102
+swap=12345678
 pixels=160
 order1=rgb
 order2=rgb
