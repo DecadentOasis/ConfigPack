@@ -109,10 +109,10 @@ start7=af00af
 start8=808080
 blank_strips_on_idle=1
 data_watchdog_time=300
-ether=192.168.0.%(ipaddr)s
+ether=192.168.111.%(ipaddr)s
 netmask=255.255.255.0
 gateway=192.168.0.1
 """
 for i in range(0, 8):
-    # IP addresses range from 192.168.0.20 to 192.168.0.28
-    file("palm-tree-pusher-%02d-pixel.rc" % (i, ), "w").write(palm_tree_art_car_template % { "ipaddr": i+20 })
+    # IP addresses range from 192.168.111.120 to 192.168.111.128
+    file("palm-tree-pusher-%02d-pixel.rc" % (i, ), "w").write(palm_tree_art_car_template % { "ipaddr": i+120 })
