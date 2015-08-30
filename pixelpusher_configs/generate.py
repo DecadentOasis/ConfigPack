@@ -111,7 +111,7 @@ blank_strips_on_idle=1
 data_watchdog_time=300
 ether=192.168.111.%(ipaddr)s
 netmask=255.255.255.0
-gateway=192.168.0.1
+gateway=192.168.111.1
 """
 for i in range(0, 8):
     # IP addresses range from 192.168.111.120 to 192.168.111.128

@@ -31,4 +31,4 @@ blank_strips_on_idle=1
 data_watchdog_time=300
 ether=192.168.111.122
 netmask=255.255.255.0
-gateway=192.168.0.1
+gateway=192.168.111.1
